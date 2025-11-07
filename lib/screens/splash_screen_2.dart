@@ -25,17 +25,13 @@ class SplashScreen2 extends StatelessWidget {
             const SizedBox(height: 20),
             Text(
               "Dont worry! we got you cover\n Use wallie instead of cash",
-              style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.normal),
-            ),
-            Text(
-              "Forgot to bring your wallet\n when you are shopinh?",
-              textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 16.0,
+                fontWeight: FontWeight.normal,
                 color: Colors.blueGrey,
-                fontWeight: FontWeight.bold,
               ),
             ),
+            
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
