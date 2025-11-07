@@ -8,6 +8,22 @@ class SplashScreen1 extends StatelessWidget {
     return Scaffold(
       body: Column(
         // TODO: isi widget di sini
+        children: [
+          SizedBox(height: 50),
+          Container(
+            width: 250,
+            height: 250,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: Colors.amber,
+              image: DecorationImage(
+                image: AssetImage("assets/images/02.jpeg"),
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+          //tambahkan disini untuk widget widget lainnya nanti
+        ],
       ),
     );
   }
