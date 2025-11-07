@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class SplashScreen1 extends StatelessWidget {
   const SplashScreen1({super.key});
 
@@ -24,15 +25,11 @@ class SplashScreen1 extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             Text(
-              "WELCOME",
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                fontFamily: 'roboto',
-              ),
+              "Welcome",
+              style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.normal),
             ),
             Text(
-              "Forgot to bring your wallet when you are shoping?",
+              "Forgot to bring your wallet\n when you are shopinh?",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 16.0,
@@ -48,7 +45,7 @@ class SplashScreen1 extends StatelessWidget {
                   width: 10,
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color.fromARGB(255, 53, 143, 199),
+                    color: Color.fromARGB(255, 53, 123, 199),
                   ),
                 ),
                 const SizedBox(width: 8),
@@ -71,7 +68,26 @@ class SplashScreen1 extends StatelessWidget {
                 ),
               ],
             ),
-          
+            Container(
+              margin: const EdgeInsets.only(top: 30, right: 30, left: 30),
+              child: SizedBox(
+                height: 40,
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () {
+                    //Todo call next Pages
+                   
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blueGrey,
+                  ),
+                  child: Text(
+                    "Continue",
+                    style: TextStyle(fontSize: 14, color: Colors.white),
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
