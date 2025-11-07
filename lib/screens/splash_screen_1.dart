@@ -1,3 +1,4 @@
+import 'package:adityaaji_uts/screens/splash_screen_2.dart';
 import 'package:flutter/material.dart';
 
 
@@ -76,6 +77,10 @@ class SplashScreen1 extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () {
                     //Todo call next Pages
+                     Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SplashScreen2()),
+                    );
                    
                   },
                   style: ElevatedButton.styleFrom(
