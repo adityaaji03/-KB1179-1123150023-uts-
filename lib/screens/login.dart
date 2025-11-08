@@ -80,6 +80,48 @@ class Login extends StatelessWidget {
                       ),
                     ),
                   ),
+                  // input password
+                  const SizedBox(height: 20),
+                  TextField(
+                    obscureText: true,
+                    decoration: InputDecoration(
+                      labelText: 'Password',
+                      hintText: 'Masukkan password Anda',
+                      prefixIcon: const Icon(Icons.lock_outline),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(12),
+                        borderSide: BorderSide(color: Colors.grey[300]!),
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(12),
+                        borderSide: const BorderSide(
+                          color: Colors.green,
+                          width: 2,
+                        ),
+                      ),
+                    ),
+                  ),
+
+                  const SizedBox(height: 25),
+
+                  // === Garis divider dengan teks "atau" ===
+                  Row(
+                    children: [
+                      const Expanded(
+                        child: Divider(thickness: 1, color: Colors.grey),
+                      ),
+                      const Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 8.0),
+                        child: Text("atau"),
+                      ),
+                      const Expanded(
+                        child: Divider(thickness: 1, color: Colors.grey),
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ),
