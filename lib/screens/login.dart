@@ -14,9 +14,11 @@ class Login extends StatelessWidget {
       home: Scaffold(
         body: Center(
           child: SingleChildScrollView(
-            child: Column(
+            child: Container(
+              padding: const EdgeInsets.all(20),
+              child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
+              children:  [
                 Icon(Icons.lock_outline, size: 80, color: Colors.green),
                 SizedBox(height: 10),
                 Text(
@@ -27,12 +29,41 @@ class Login extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                Text("Silahkan login untuk melanjutkan"),
+                Text(
+                  "Silahkan login untuk melanjutkan",
+                  style: TextStyle(fontSize: 14.0),
+                  textAlign: TextAlign.center,
+                ),
+
+                SizedBox(height: 30),
+                TextField(
+                    keyboardType: TextInputType.emailAddress,
+                    decoration: InputDecoration(
+                      labelText: 'Email',
+                      hintText: 'Masukkan email Anda',
+                      prefixIcon: Icon(Icons.email_outlined),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(12),
+                        borderSide: BorderSide(color: Colors.grey[300]!),
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(12),
+                        borderSide: const BorderSide(
+                          color: Colors.green,
+                          width: 2,
+                        ),
+                      ),
+                    ),
+                  ),
               ],
             ),
           ),
-        ),
+        )
       ),
+      )
     );
   }
 }
