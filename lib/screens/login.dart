@@ -9,9 +9,30 @@ class Login extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(body: Center(child: Text("Halaman Login"))),
+      home: Scaffold(
+        body: Center(
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                Icon(Icons.lock_outline, size: 80, color: Colors.green),
+                SizedBox(height: 10),
+                Text(
+                  "Selamat datang",
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.green,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text("Silahkan login untuk melanjutkan"),
+              ],
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
