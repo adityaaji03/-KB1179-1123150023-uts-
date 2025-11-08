@@ -1,3 +1,4 @@
+import 'package:adityaaji_uts/screens/login.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen3 extends StatelessWidget {
@@ -74,7 +75,7 @@ class SplashScreen3 extends StatelessWidget {
                     //Todo call next Pages
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => SplashScreen3()),
+                      MaterialPageRoute(builder: (context) => Login()),
                     );
                   },
                   style: ElevatedButton.styleFrom(
