@@ -51,7 +51,7 @@ class SplashScreen3 extends StatelessWidget {
                   width: 10,
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color.fromARGB(255, 53, 123, 199),
+                    color: Color.fromARGB(255, 184, 216, 227),
                   ),
                 ),
                 const SizedBox(width: 8),
@@ -60,7 +60,7 @@ class SplashScreen3 extends StatelessWidget {
                   width: 10,
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color.fromARGB(255, 184, 216, 227),
+                    color: Color.fromARGB(255, 53, 123, 199),
                   ),
                 ),
               ],
