@@ -25,7 +25,7 @@ class Login extends StatelessWidget {
                   "Selamat datang",
                   style: TextStyle(
                     fontSize: 20,
-                    color: Colors.green,
+                    color: Colors.blueGrey,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
