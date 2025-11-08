@@ -17,26 +17,26 @@ class Login extends StatelessWidget {
             child: Container(
               padding: const EdgeInsets.all(20),
               child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children:  [
-                Icon(Icons.lock_outline, size: 80, color: Colors.blueGrey),
-                SizedBox(height: 10),
-                Text(
-                  "Selamat datang",
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.blueGrey,
-                    fontWeight: FontWeight.bold,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.lock_outline, size: 80, color: Colors.blueGrey),
+                  SizedBox(height: 10),
+                  Text(
+                    "Selamat datang",
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.blueGrey,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                ),
-                Text(
-                  "Silahkan login untuk melanjutkan",
-                  style: TextStyle(fontSize: 14.0),
-                  textAlign: TextAlign.center,
-                ),
+                  Text(
+                    "Silahkan login untuk melanjutkan",
+                    style: TextStyle(fontSize: 14.0),
+                    textAlign: TextAlign.center,
+                  ),
 
-                SizedBox(height: 30),
-                TextField(
+                  SizedBox(height: 30),
+                  TextField(
                     keyboardType: TextInputType.emailAddress,
                     decoration: InputDecoration(
                       labelText: 'Email',
@@ -58,12 +58,34 @@ class Login extends StatelessWidget {
                       ),
                     ),
                   ),
-              ],
+
+                  // === login ===
+                  SizedBox(
+                    width: double.infinity,
+                    height: 50,
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.blueGrey,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                      ),
+                      child: const Text(
+                        "Login",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
-        )
+        ),
       ),
-      )
     );
   }
 }
