@@ -1,3 +1,4 @@
+import 'package:adityaaji_uts/screens/splash_screen_3.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen2 extends StatelessWidget {
@@ -28,6 +29,7 @@ class SplashScreen2 extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontWeight: FontWeight.normal,
+          
                 color: Colors.blueGrey,
               ),
             ),
@@ -40,7 +42,7 @@ class SplashScreen2 extends StatelessWidget {
                   width: 10,
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color.fromARGB(255, 53, 123, 199),
+                   color: Color.fromARGB(255, 184, 216, 227),
                   ),
                 ),
                 const SizedBox(width: 8),
@@ -49,7 +51,7 @@ class SplashScreen2 extends StatelessWidget {
                   width: 10,
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color.fromARGB(255, 184, 216, 227),
+                    color: Color.fromARGB(255, 53, 123, 199),
                   ),
                 ),
                 const SizedBox(width: 8),
@@ -71,6 +73,10 @@ class SplashScreen2 extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () {
                     //Todo call next Pages
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SplashScreen3()),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.blueGrey,
