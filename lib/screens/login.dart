@@ -19,7 +19,7 @@ class Login extends StatelessWidget {
               child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children:  [
-                Icon(Icons.lock_outline, size: 80, color: Colors.green),
+                Icon(Icons.lock_outline, size: 80, color: Colors.blueGrey),
                 SizedBox(height: 10),
                 Text(
                   "Selamat datang",
